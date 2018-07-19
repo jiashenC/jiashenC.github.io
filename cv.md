@@ -15,7 +15,7 @@ high performance software system, so I decide switch my focus to **Software Syst
 for my graduate study. 
 
 * I received *Bachelor of Science* degree in **Computer Science** from **Georgia Tech**. In my undergraduate
-study, I took many **Artificial Intelligence** related course, such as **Machine Learning** and **Natural Language
+study, I took many **Artificial Intelligence** related courses, such as **Machine Learning** and **Natural Language
 Processing**. 
 
 * I started my undergraduate study at __Rose-Hulman Institute of Technology__. At **Rose-Hulman**, I took my
@@ -24,7 +24,7 @@ first programming class in **Python** and then I made my mind to study **Compute
 
 ## Experience
 * I am a **Research Assistant**, under supervision of [Dr. Hyesoon Kim](https://www.cc.gatech.edu/~hyesoon/). I
-mostly work with my mentor [Ramyad Hadidi](https://ramyadhadidi.github.io). Our focus is to build **Robust** and 
+mostly work with my mentor [Ramyad Hadidi](https://ramyadhadidi.github.io). Our focus is to build **robust** and 
 **high performance** system. 
 
 * I was a **Software Engineer Intern** on infrastructure team of *Clinc Inc*. My main project was deploying the 
