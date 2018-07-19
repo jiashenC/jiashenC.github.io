@@ -19,7 +19,7 @@ study, I took many **Artificial Intelligence** related course, such as **Machine
 Processing**. 
 
 * I started my undergraduate study at __Rose-Hulman Institute of Technology__. At **Rose-Hulman**, I took my
-first programming class in **Python** and then I made my mind to study **Computer Science. I transferred to 
+first programming class in **Python** and then I made my mind to study **Computer Science**. I transferred to 
 **Georgia Tech** in my second year.
 
 ## Experience
