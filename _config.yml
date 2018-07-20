@@ -2,6 +2,7 @@ title:            Jiashen Cao's website
 description:      Thank you for stopping by.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              //jiashenc.github.io
+disqus_shortname: jiashencao
 
 # Owner/author information
 owner:
