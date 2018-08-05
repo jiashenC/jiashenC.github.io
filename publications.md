@@ -15,7 +15,6 @@ comments: false
   * Ramyad Hadidi, ***Jiashen Cao***, Matthew Woodward, Michael Ryoo, Hyesoon Kim  
   __Distributed Perception by Collaborative Robots__  
   IEEE Robotics and Automation Letters
-  Acceptance Rate:<30%
   
   * Ramyad Hadidi, ***Jiashen Cao***, Matthew Woodward, Michael Ryoo, Hyesoon Kim  
   __Real-Time Image Recognition Using Collaborative IoT Devices__  
