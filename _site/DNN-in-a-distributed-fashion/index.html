@@ -5,24 +5,24 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Jiashen Cao's website  &#8211; Hello World </title>
-<meta name="description" content="My very first blog">
+<title>Jiashen Cao's website  &#8211; DNN in a distributed fashion </title>
+<meta name="description" content="This is a summary about work we've done so far. I present the work in IROS 2018.">
 <meta name="keywords" content="">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:description" content="My very first blog">
-<meta property="og:url" content="http://localhost:4000/hello-world/">
+<meta property="og:title" content="DNN in a distributed fashion">
+<meta property="og:description" content="This is a summary about work we've done so far. I present the work in IROS 2018.">
+<meta property="og:url" content="http://localhost:4000/DNN-in-a-distributed-fashion/">
 <meta property="og:site_name" content="Jiashen Cao's website">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/hello-world/">
+<link rel="canonical" href="http://localhost:4000/DNN-in-a-distributed-fashion/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Jiashen Cao's website Feed">
 
 
@@ -113,19 +113,74 @@
   <article>
     <div class="headline-wrap">
       
-        <h1><a href="http://localhost:4000/hello-world/" rel="bookmark" title="Hello World">Hello World</a></h1>
+        <h1><a href="http://localhost:4000/DNN-in-a-distributed-fashion/" rel="bookmark" title="DNN in a distributed fashion">DNN in a distributed fashion</a></h1>
       
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>My personal website is created by using <a href="https://github.com/mmistakes/minimal-mistakes">Minimal Mistakes Theme</a>. I have 
-been trying to find this theme for a while (because I really like it), but cannot locate on Github. 
-It turns out that this is an old version of <strong>Minimal Mistakes</strong>.</p>
+      <p><strong>Deep Neural Network</strong> is useful in image recognition, object detection nowadays. DNN usually runs trainings and 
+predictions on high performance server. In real environment, IoT (small memory space &amp; low computation power) devices 
+actually have more accesses to raw data compared to server.</p>
+
+<h3 id="can-iot-devices-run-dnn-predictions-directly">Can IoT devices run DNN predictions directly?</h3>
+<p>It is <strong>VERY HARD</strong> run DNN prediction on IoT because</p>
+<ul>
+  <li><strong>Memory Constraint</strong>: DNN has large parameter size (large memory footprint), which is not able to fit into IoT memory.</li>
+  <li><strong>Computation Latency</strong>: Single data inference latency on IoT is high.</li>
+</ul>
+
+<p>Prior work proposed that IoT devices can offload data to server, but it still requires the presence of server.</p>
+
+<h3 id="what-we-do">What we do?</h3>
+<p>In reality, many IoT devices often sit in a shared environment. We propose that instead of running DNN on a single
+IoT device, we can use <strong>a cluster of IoT devices</strong> to run DNN predictions in <strong>a distributed fashion</strong>.</p>
+
 <pre></pre>
-<h3 id="an-official-hello-world-from-my-personal-website">An official Hello World from my personal website.</h3>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span> <span class="s">'hello world`</span><span class="err">
-</span></code></pre></div></div>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"hello world"</span><span class="o">);</span>
-</code></pre></div></div>
+<p><img width="400" src="http://localhost:4000/images/2018-10-06-DNN-in-a-distributed-fashion/figure1.png" /></p>
+<pre></pre>
+
+<p>Above is a simple explanation for <strong>running DNN in a distributed fashion</strong>. Instead of aggregating 4 layers on a single
+device, each layer is allocated on a unique device. One device’s output will serve as another device’s input,
+and data is transferred over internet. This simply builds a system to run DNN in a distributed way.</p>
+
+<h3 id="but-it-is-not-good-enough">BUT, it is NOT good enough!</h3>
+<p>Even though we distribute layer to different device, some very heavy layer still presents <strong>memory constraint</strong> and 
+<strong>computation latency</strong> challenge to IoT devices. Therefore, in addition to simple DNN distribution, we proposed two 
+techniques to solve <strong>memory constraint</strong> and <strong>computation latency</strong> issues.</p>
+
+<h4 id="1st-data-parallelism">1st: Data Parallelism</h4>
+<p>It is hard to reduce <strong>computation latency</strong> because amount of computation done by each layer is fixed. Instead of 
+reducing <strong>latency</strong> for each data, our approach focuses on increasing the <strong>throughput</strong> of the system.</p>
+
+<pre></pre>
+<p><img width="400" src="http://localhost:4000/images/2018-10-06-DNN-in-a-distributed-fashion/figure2.png" /></p>
+<pre></pre>
+
+<p>In <strong>Data Parallelism</strong> approach, instead of using 1 device for task B, we dedicate 2 (or multiple) devices to run task 
+B. Once task A finishes its computation, it sends output to <strong>ANY ONE</strong> of devices which are dedicated to task B.</p>
+
+<pre></pre>
+<p>In this case, we simply add number of devices dedicated to task B to increase the <strong>throughput</strong> of the system.</p>
+
+<h4 id="2nd-model-parallelism">2nd: Model Parallelism</h4>
+<p>We propose <strong>Model Parallelism</strong> to reduce <strong>memory footprint</strong> introduced by a heavy layer.</p>
+
+<pre></pre>
+<p><img width="400" src="http://localhost:4000/images/2018-10-06-DNN-in-a-distributed-fashion/figure3.png" /></p>
+<pre></pre>
+
+<p>The difference between <strong>Data Parallelism</strong> and <strong>Model Parallelism</strong> is that, in <strong>Data Parallelism</strong> all devices have
+the same parameter, which is the original parameter of task B.</p>
+
+<pre></pre>
+<p>But in <strong>Model Parallelism</strong>, all devices have unique
+parameters, each unique parameter is a portion of original parameter of task B. In <strong>Model Parallelism</strong>, 
+the aggregation of parameters on devices dedicated to task B is the original parameter of task B.</p>
+
+<pre></pre>
+<p>In this case, the <strong>Model Parallelism</strong> helps to reduce each device’s <strong>memory footprint</strong>. It brings performance
+benefit because with less memory usage, device does not need to go to swap space or hard disk.</p>
+
+<h4 id="thanks-for-reading-links-to-paper-can-be-found-under-publication">Thanks for reading. Links to paper can be found under <a href="http://localhost:4000/publications/">Publication</a>.</h4>
 
       <hr />
       <footer role="contentinfo">
@@ -152,7 +207,7 @@ It turns out that this is an old version of <strong>Minimal Mistakes</strong>.</
 
 
         </div>
-        <p class="byline"><strong>Hello World</strong> was published on <time datetime="2018-07-16T00:00:00-04:00">July 16, 2018</time> by <a href="http://localhost:4000" title="About Jiashen Cao">Jiashen Cao</a>.</p>
+        <p class="byline"><strong>DNN in a distributed fashion</strong> was published on <time datetime="2018-10-06T00:00:00-04:00">October 06, 2018</time> by <a href="http://localhost:4000" title="About Jiashen Cao">Jiashen Cao</a>.</p>
       </footer>
     </div><!-- /.article-wrap -->
   
