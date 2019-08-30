@@ -9,13 +9,13 @@ comments: false
 ## 2019
   * Ramyad Hadidi, ***Jiashen Cao***, Yilun Xie, Bahar Asgari, Tushar Krishna, Hyesoon Kim   
   __Characterizing the Deployment of Deep Neural Networks on Commercial Edge Devices__   
-  IEEE International Symposium on Workload Characterization (IISWC) - Orlando, Florida (2019)   
+  IEEE International Symposium on Workload Characterization (IISWC) - Orlando, Florida (2019)
 
-  ***Jiashen Cao***, Ramyad Hadidi, Joy Arulraj and Hyesoon Kim
+  * ***Jiashen Cao***, Ramyad Hadidi, Joy Arulraj and Hyesoon Kim   
   __Work-in-Progress: Video Analytics From Edge To Server__   
   International Conference on Hardware/Software Codesign and System Synthesis CODES+ISSS (ESWEEK) - New York, NY (2019)
 
-  Ramyad Hadidi, ***Jiashen Cao***, Matthew Merck, Arthur Siqueira, Qiusen Huang, Abhijeet Saraha, Chunjun Jia, Bingyao Wang, Dongsuk Lim, Lixing Liu and Hyesoon Kim   
+  * Ramyad Hadidi, ***Jiashen Cao***, Matthew Merck, Arthur Siqueira, Qiusen Huang, Abhijeet Saraha, Chunjun Jia, Bingyao Wang, Dongsuk Lim, Lixing Liu and Hyesoon Kim   
   __Understanding the Power Consumption of Executing Deep Neural Networks on a Distributed Robot System__   
   Algorithms and Architectures for Learning in-the-Loop Systems in Autonomous Flight Workshop - Co-located with IEEE International Conference on Robotics and Automation (ICRA) - Montreal, QC (2019)
 
