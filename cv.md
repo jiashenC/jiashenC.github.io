@@ -7,7 +7,7 @@ modified: 8-7-2014
 comments: false
 ---
 
-You can download my CV [here](https://drive.google.com/file/d/0BwpHw8eNDWlUNXZ1V3dWeXhxYVE/view?usp=sharing). 
+You can download my CV [here](files/cv.pdf). 
 
 ## Education
 * I am a graduate student at **Georgia Tech** now. After doing research for 2 years, I am very passionate about
