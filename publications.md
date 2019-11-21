@@ -40,6 +40,7 @@ comments: false
   * Ramyad Hadidi, ***Jiashen Cao***, Matthew Woodward, Michael Ryoo, Hyesoon Kim  
   __Distributed Perception by Collaborative Robots__  
   IEEE Robotics and Automation Letters
+  [[PDF]](files/IROS-2018.pdf)
   
   * Ramyad Hadidi, ***Jiashen Cao***, Matthew Woodward, Michael Ryoo, Hyesoon Kim  
   __Real-Time Image Recognition Using Collaborative IoT Devices__  

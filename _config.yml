@@ -9,7 +9,7 @@ owner:
   name:           Jiashen Cao
   avatar:         jiashenc.png
   bio:            I am from Haining, a small but beautiful town in Zhejiang Province, China. I am passionate about high performance system and web development.
-  email:          caojiashen24@gmail.com
+  email:          jcao62@gatech.edu
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:
   linkedin:
@@ -29,8 +29,6 @@ links:
     url: /cv/
   - title: Publications
     url: /publications/
-  - title: Blog
-    url: /blog/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
@@ -40,7 +38,7 @@ highlighter: rouge
 markdown:    kramdown
 kramdown:
   extensions: ["strikethrough"]
-  
+
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
