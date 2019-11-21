@@ -18,7 +18,7 @@ general Computer Systems problems, so I decide switch my focus to Computer Syste
 for my graduate study. 
 
 * I received Bachelor of Science degree in Computer Science from **Georgia Tech**. In my undergraduate
-study, I took many Artificial Intelligence related courses, such as Machine Learning** and Natural Language
+study, I took many Artificial Intelligence related courses, such as Machine Learning and Natural Language
 Processing. 
 
 * I started my undergraduate study at **Rose-Hulman Institute of Technology**. At **Rose-Hulman**, I took my
