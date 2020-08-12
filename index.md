@@ -7,8 +7,7 @@ image:
 ---
 My Chinese name is **佳申 曹**. It is pronounced as [JYAH-shen Za-ah](myname.mp3).
 <pre></pre>
-I am a second-year **Computer Science** Master student at **Georgia Tech**, 
-under supervisions of [Professor Hyesoon Kim](https://www.cc.gatech.edu/~hyesoon/)
-and [Professor Joy Arulraj](https://www.cc.gatech.edu/~jarulraj/).
+My research interests are in the areas of *building efficient system for ML applications*. 
 <pre></pre>
-I enjoy doing research in areas of *Computer Systems, Architecture and Machine Learning*. 
+I am now a first-year Ph.D. student co-advised by [Professor Hyesoon Kim](https://www.cc.gatech.edu/~hyesoon/)
+and [Professor Joy Arulraj](https://www.cc.gatech.edu/~jarulraj/).
