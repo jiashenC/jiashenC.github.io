@@ -1,12 +1,11 @@
 ---
 layout: publications
 permalink: /publications/
-title: My Publications
+title: Selected Publications
 tags: [publications]
 modified: 8-7-2014
 comments: false
 ---
-## Selected Publications
   * ***Jiashen Cao***, Ramyad Hadidi, Joy Arulraj, Hyesoon Kim  
   __THIA: Accelerating Video Analytics using Early Inference and Fine-Grained Query Planning__   
   [[ArXiv]](https://arxiv.org/abs/2102.08481)
