@@ -6,7 +6,7 @@ tags: [Jekyll, theme, responsive, blog, template]
 image: 
 ---
 I am now a fourth-year Ph.D. student at Georgia Tech. I am currently co-advised by [Hyesoon Kim](https://www.cc.gatech.edu/~hyesoon/)
-and [Joy Arulraj](https://www.cc.gatech.edu/~jarulraj/). I am excited about leveraging modern hardwares for emergent workloads. Particularly, I am interested in building relational and relational-AI database systems by leveraging the power of GPUs. I also contributed to [EvaDB](https://github.com/georgia-tech-db/evadb) extensively. I am also lead contributor of project [SeaJay]({{site.url}}/seajay/).
+and [Joy Arulraj](https://www.cc.gatech.edu/~jarulraj/). I am excited about leveraging modern hardwares for emergent workloads. Particularly, I am interested in building relational and relational-AI database systems by leveraging the power of GPUs. I also contributed to [EvaDB](https://github.com/georgia-tech-db/evadb) extensively. I am also a lead contributor of project [SeaJay]({{site.url}}/seajay/).
 
 ### Selected Publications
 
