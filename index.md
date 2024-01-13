@@ -12,7 +12,7 @@ and [Joy Arulraj](https://www.cc.gatech.edu/~jarulraj/). I am excited about leve
 
 * GPU Database Systems Characterization and Optimization  
   **Jiashen Cao**, Rathijit Sen, Matteo Interlandi, Joy Arulraj, Hyesoon Kim  
-  VLDB 2023 [[PDF]](https://www.vldb.org/pvldb/volumes/17/paper/GPU%20Database%20Systems%20Characterization%20and%20Optimization) [[Code]](https://github.com/jiashenC/gpudb-char-and-opt)  
+  VLDB 2024 [[PDF]](https://www.vldb.org/pvldb/volumes/17/paper/GPU%20Database%20Systems%20Characterization%20and%20Optimization) [[Code]](https://github.com/jiashenC/gpudb-char-and-opt)  
 
 * FiGO: Fine-Grained Query Optimization in Video Analytics  
   **Jiashen Cao**, Karan Sarkar, Ramyad Hadidi, Joy Arulraj, Hyesoon Kim  
