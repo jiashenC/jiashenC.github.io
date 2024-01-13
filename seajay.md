@@ -23,6 +23,10 @@ In this project, I prototype
 
 <pre></pre>
 
+![seajay2](/images/seajay/25.JPG)  
+
+<pre></pre>
+
 ![seajay3](/images/seajay/3.jpg)  
 
 <pre></pre>
