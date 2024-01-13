@@ -45,5 +45,5 @@ and [Joy Arulraj](https://www.cc.gatech.edu/~jarulraj/). I am excited about leve
 * Georgia Institute of Technology (2016.01 - present)  
   B.Sc, M.Sc, and Ph.D. in CS  
 
-* Rose-Hulman Institue of Technology (2014.08 - transfer out)  
+* Rose-Hulman Institute of Technology (2014.08 - transfer out)  
   B.Sc in CS  
